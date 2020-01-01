@@ -9,7 +9,7 @@ for x in range(1000):
     for y in range(1000):
         lights[x].append(0)
 
-for line in open("input/6.txt"):
+for line in open("input/06.txt"):
     match = re.match(command_pattern, line.strip())
     pos = [match.group(1).strip()]
     for i in range(2, 6, 2):
@@ -39,7 +39,7 @@ for x in range(1000):
     for y in range(1000):
         lights[x].append(0)
 
-for line in open("input/6.txt"):
+for line in open("input/06.txt"):
     match = re.match(command_pattern, line.strip())
     pos = [match.group(1).strip()]
     for i in range(2, 6, 2):

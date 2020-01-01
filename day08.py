@@ -1,7 +1,7 @@
 code_len = 0
 str_len = 0
 coded_code_len = 0
-for line in open("input/8.txt"):
+for line in open("input/08.txt"):
     line = line.strip()
     code_len += len(line)
     string = line[1:-1].encode("utf-8").decode("unicode_escape")

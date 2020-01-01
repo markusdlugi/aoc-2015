@@ -1,6 +1,6 @@
 def load_input():
     result = dict()
-    for line in open("input/7.txt"):
+    for line in open("input/07.txt"):
         in_out = line.strip().split(" -> ")
         instr = in_out[0]
         if " " not in instr:

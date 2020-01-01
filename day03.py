@@ -1,4 +1,4 @@
-instructions = open("input/3.txt").read()
+instructions = open("input/03.txt").read()
 
 directions = ['^', '>', 'v', '<']
 dx = [0, 1, 0, -1]

@@ -1,4 +1,4 @@
-text = open("input/1.txt").read()
+text = open("input/01.txt").read()
 
 floor = 0
 current_pos = 0

@@ -1,5 +1,5 @@
 packages = []
-for line in open("input/2.txt"):
+for line in open("input/02.txt"):
     package = list(map(int, line.split("x")))
     packages.append(sorted(package))
 

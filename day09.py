@@ -2,7 +2,7 @@ import itertools
 
 v = set()
 e = dict()
-for line in open("input/9.txt"):
+for line in open("input/09.txt"):
     first_split = line.strip().split(" to ")
     second_split = first_split[1].split(" = ")
     v.add(first_split[0])
