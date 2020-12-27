@@ -51,5 +51,5 @@ for ring_count in range(3):
 
 winning = sorted(winning, key=lambda tup: tup[0])
 losing = sorted(losing, key=lambda tup: tup[0], reverse=True)
-print(winning[0])
-print(losing[0])
+print(winning[0][0])
+print(losing[0][0])

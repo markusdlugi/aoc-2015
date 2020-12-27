@@ -125,11 +125,11 @@ player_stats["mana"] = 500
 # Part A
 winning = spell_bfs(player_stats, boss_stats, spells, False)
 winning = sorted(winning, key=lambda item: item["used_mana"])
-print("{} Mana used for:".format(winning[0]["used_mana"]))
-print(list(map(lambda used: used[0], winning[0]["used"])))
+print(winning[0]["used_mana"])
+#print(list(map(lambda used: used[0], winning[0]["used"])))
 
 # Part B
 winning = spell_bfs(player_stats, boss_stats, spells, True)
 winning = sorted(winning, key=lambda item: item["used_mana"])
-print("{} Mana used for:".format(winning[0]["used_mana"]))
-print(list(map(lambda used: used[0], winning[0]["used"])))
+print(winning[0]["used_mana"])
+#print(list(map(lambda used: used[0], winning[0]["used"])))

@@ -82,7 +82,7 @@ for k, v in replacement_dict.items():
             new_molecules.add(new_molecule)
 
 print(len(new_molecules))
-print()
+#print()
 
 # Part B
 rnar_products = set()
@@ -106,11 +106,12 @@ while len(rnar_sections) > 0:
     steps += len(path) - 1
     molecule = molecule[:rnar[0]+2] + new_substring + molecule[rnar[1]:]
     rnar_sections = get_rnar_sections(molecule)
-    print(steps, molecule)
+    #print(steps, molecule)
 
-print("Rn Ar reduction finished")
+#print("Rn Ar reduction finished")
 
 current = molecule
+last_steps = None
 while current != 'e':
     possible = []
     for k, v in replacement_dict.items():
@@ -125,4 +126,6 @@ while current != 'e':
     for match in matches:
         current = current[:match.start()] + possible[0][2] + current[match.start()+len(possible[0][1]):]
         steps += 1
-    print(steps, current)
+    last_steps = steps
+    #print(steps, current)
+print(last_steps)

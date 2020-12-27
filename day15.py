@@ -59,10 +59,10 @@ for line in open("input/15.txt"):
 
 # Part A
 recipe = add_ingredient({}, ingredients, None)
-print(recipe)
+#print(recipe)
 print(compute_score(recipe, ingredients))
 
 # Part B
 recipe = add_ingredient({}, ingredients, 500)
-print(recipe)
+#print(recipe)
 print(compute_score(recipe, ingredients))
